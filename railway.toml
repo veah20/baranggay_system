@@ -1,5 +1,6 @@
 [build]
-builder = "nixpacks"
+provider = "nixpacks"
 
 [deploy]
 startCommand = "bash start.sh"
+restartPolicyMaxRetries = 3
