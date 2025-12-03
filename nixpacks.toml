@@ -1,9 +1,0 @@
-[build]
-pkgs = ["bash", "php82"]
-
-[buildConfig]
-install = ["composer install --no-interaction --prefer-dist"]
-
-[start]
-runImage = "nixpkgs#php82"
-cmd = "bash start.sh"
