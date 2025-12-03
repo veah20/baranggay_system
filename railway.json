@@ -4,6 +4,6 @@
     "builder": "dockerfile"
   },
   "deploy": {
-    "startCommand": "bash /usr/local/bin/start.sh"
+    "startCommand": "bash /var/www/html/start.sh"
   }
 }
