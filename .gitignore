@@ -1,0 +1,64 @@
+# Environment
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Uploads (keep directory structure)
+uploads/*
+!uploads/.gitkeep
+!uploads/profiles/
+!uploads/profiles/.gitkeep
+!uploads/signatures/
+!uploads/signatures/.gitkeep
+!uploads/logos/
+!uploads/logos/.gitkeep
+!uploads/documents/
+!uploads/documents/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# System
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.vim/
+
+# PHP
+vendor/
+composer.lock
+.php-version
+
+# Database backups
+*.sql.bak
+database/backups/
+*.sql.gz
+
+# OS files
+.git/
+.gitkeep
+.DS_Store
+
+# Node (if using any frontend build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
