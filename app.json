@@ -1,0 +1,26 @@
+{
+  "name": "Barangay Information and Reporting System",
+  "description": "BIRS - Barangay Information and Reporting System",
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "env": {
+    "APP_ENV": {
+      "description": "Application environment",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port to run on",
+      "value": "8080"
+    }
+  }
+}
