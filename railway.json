@@ -1,9 +1,6 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS",
-    "nixpacks": {
-      "pkgs": ["php82", "php82Extensions.pdo", "php82Extensions.pdo_mysql"]
-    }
+    "builder": "NIXPACKS"
   }
 }
