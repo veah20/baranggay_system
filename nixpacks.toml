@@ -1,0 +1,11 @@
+[build]
+# Tell Nixpacks this is a PHP project
+cmds = []
+
+[build.nix]
+# Ensure we have PHP with MySQL support
+packages = ["php82", "php82Packages.composer"]
+
+[start]
+# Start PHP development server
+cmd = "php -S 0.0.0.0:${PORT:-8080} -t ."

@@ -1,6 +1,7 @@
 [build]
-provider = "nixpacks"
+builder = "dockerfile"
 
 [deploy]
-startCommand = "php -S 0.0.0.0:${PORT:-8080} -t ."
+startCommand = "bash /usr/local/bin/start.sh"
 restartPolicyMaxRetries = 3
+restartPolicyType = "on_failure"

@@ -36,6 +36,11 @@ if (!class_exists('Database')) {
                     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci"
                 ];
                 
+                // Add SSL for Railway MySQL connections
+                if (!empty($this->host) && strpos($this->host, 'railway') !== false) {
+                    $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = false;
+                }
+                
                 $this->conn = new PDO($dsn, $this->username, $this->password, $options);
                 
                 // Explicitly set the connection collation
