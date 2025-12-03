@@ -2,5 +2,5 @@
 provider = "nixpacks"
 
 [deploy]
-startCommand = "bash start.sh"
+startCommand = "php -S 0.0.0.0:${PORT:-8080} -t ."
 restartPolicyMaxRetries = 3
