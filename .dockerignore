@@ -1,0 +1,12 @@
+.git
+.gitignore
+.env
+.DS_Store
+node_modules
+uploads/*
+!uploads/.gitkeep
+logs/*
+!logs/.gitkeep
+*.log
+.vscode
+.idea
