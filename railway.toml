@@ -1,7 +1,0 @@
-[build]
-builder = "dockerfile"
-
-[deploy]
-startCommand = "bash /var/www/html/start.sh"
-restartPolicyMaxRetries = 3
-restartPolicyType = "on_failure"
