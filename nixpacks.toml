@@ -1,0 +1,5 @@
+[build]
+pkgs = ["php82", "php82Extensions.pdo", "php82Extensions.pdo_mysql"]
+
+[start]
+cmd = "bash start.sh"
