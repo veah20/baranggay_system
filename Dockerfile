@@ -17,8 +17,8 @@ RUN chown -R www-data:www-data /var/www/html && \
     chmod -R 755 /var/www/html
 
 # Copy and make start script executable
-COPY start.sh /usr/local/bin/start.sh
-RUN chmod +x /usr/local/bin/start.sh
+COPY start.sh /var/www/html/start.sh
+RUN chmod +x /var/www/html/start.sh
 
 # Configure Apache to listen on Railway PORT
 RUN sed -i 's/Listen 80/Listen 0.0.0.0:8080/' /etc/apache2/ports.conf
@@ -27,4 +27,4 @@ RUN sed -i 's/Listen 80/Listen 0.0.0.0:8080/' /etc/apache2/ports.conf
 EXPOSE 8080
 
 # Start Apache
-CMD ["/usr/local/bin/start.sh"]
+CMD ["bash", "/var/www/html/start.sh"]
